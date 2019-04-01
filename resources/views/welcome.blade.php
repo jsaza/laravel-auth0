@@ -80,6 +80,12 @@
                     Laravel
                 </div>
 
+                @auth
+                <div class="" style="margin: 5px;">
+                <pre class="text-left">{{ print_r(Auth::user()->getUserInfo(),1) }}</pre>
+                </div>
+                @endauth
+
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
